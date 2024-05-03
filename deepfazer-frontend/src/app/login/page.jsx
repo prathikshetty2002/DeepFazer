@@ -79,7 +79,7 @@ const LoginWithGoogle = () => {
     }
   };
 
-  const handleLogout = () => {
+  const handlelogonewut = () => {
     auth
       .signOut()
       .then(() => {
@@ -92,7 +92,7 @@ const LoginWithGoogle = () => {
   };
 
   {
-    /* <button onClick={handleLogout}>Logout</button> */
+    /* <button onClick={handlelogonewut}>logonewut</button> */
   }
 
   return (

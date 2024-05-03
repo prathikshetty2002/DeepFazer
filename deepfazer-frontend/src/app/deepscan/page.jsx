@@ -460,44 +460,44 @@ const ImageUploader = () => {
           <div className="flex flex-col items-center">
             <a href="/deepscan">
               <img
-                src="/food.png"
+                src="/scan.png"
                 alt=""
                 height={30}
                 width={30}
                 className={` mx-auto opacity-100`}
               />
-              <div className="text-xs text-center">Food</div>
+              <div className="text-xs text-center">DeepScan</div>
             </a>
           </div>
           <div className="flex flex-col items-center">
-            <a href="/skinsnap">
+            <a href="/nutricon">
               <img
-                src="/face.png"
+                src="/connect.png"
                 alt=""
                 height={30}
                 width={30}
                 className={` mx-auto opacity-40 hover:opacity-100`}
               />
-              <div className="text-xs text-center">Skin</div>
+              <div className="text-xs text-center">Connect</div>
             </a>
           </div>
           <div className="flex flex-col items-center">
-            <a href="/bodysnap">
+            <a href="/pricings">
               <img
-                src="/body.png"
+                src="/pricing.png"
                 alt=""
                 height={30}
                 width={30}
                 className={` mx-auto opacity-40 active:opacity-100`}
               />
-              <div className="text-xs text-center">Body</div>
+              <div className="text-xs text-center">Pricings</div>
             </a>
           </div>
 
           <div className="flex flex-col items-center">
             <a href="/scoreboard">
               <img
-                src="/nutricon.png"
+                src="/leaderboard.png"
                 alt=""
                 height={30}
                 width={30}

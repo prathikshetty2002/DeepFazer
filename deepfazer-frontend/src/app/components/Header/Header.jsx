@@ -52,7 +52,7 @@ const Header = () => {
     });
     return () => unsubscribe();
   }, []);
-  const handleLogout = () => {
+  const handlelogonewut = () => {
     signOut(auth)
       .then(() => {
         sessionStorage.removeItem("user");
@@ -83,7 +83,7 @@ const Header = () => {
               />
             ) : (
               <img
-                src="/logo.png"
+                src="/logonew.png"
                 alt=""
                 height={30}
                 width={30}
@@ -102,7 +102,7 @@ const Header = () => {
           )}
 
           {user ? (
-            <button onClick={handleLogout}>
+            <button onClick={handlelogonewut}>
               <img src="/exit.png" height={30} width={30} alt="" />
             </button>
           ) : (
@@ -126,23 +126,23 @@ const Header = () => {
                   href="/deepscan"
                   className="max-md:hidden rounded-full px-2 py-2 -ml-4 text-black hover:bg-gray-300 transition duration-300 ease-in-out"
                 >
-                  Food
+                  DeepScan
                 </a>
               </li>
               <li>
                 <a
-                  href="/bodysnap"
+                  href="/nutricon"
                   className="max-md:hidden rounded-full px-2 py-2 -ml-4 text-black hover:bg-gray-300 transition duration-300 ease-in-out"
                 >
-                  Body
+                  Connect
                 </a>
               </li>
               <li>
                 <a
-                  href="/skinsnap"
+                  href="/pricings"
                   className="max-md:hidden rounded-full px-2 py-2 -ml-4 text-black hover:bg-gray-300 transition duration-300 ease-in-out"
                 >
-                  Skin
+                  Pricing
                 </a>
               </li>
               {/* <li>

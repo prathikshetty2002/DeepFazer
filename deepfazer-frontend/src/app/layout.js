@@ -9,7 +9,7 @@ export const metadata = {
   title: "deepfazer",
   description:
     "Think of Fitness Think of Us Creation By Prathik Shetty, Rahul Singh , Rishabh Pandey",
-  image: "/logo.png",
+  image: "/logonew.png",
   url: "https://deepfazer.vercel.app/",
   type: "website",
   siteName: "deepfazer",
