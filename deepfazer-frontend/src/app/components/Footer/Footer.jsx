@@ -97,8 +97,8 @@ const Footer = () => {
                 </a>
               </p>
               <p className="mb-4">
-                <a href="/foodsnap" className=" text-black">
-                  Foodsnap
+                <a href="/deepscan" className=" text-black">
+                  deepscan
                 </a>
               </p>
               <p className="mb-4">

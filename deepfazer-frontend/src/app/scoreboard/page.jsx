@@ -13,19 +13,14 @@ import {
 
 const UserRankingPage = () => {
   const firebaseConfig = {
-    apiKey: "AIzaSyAbn4iCEy5W9rSO-UiOmd_8Vbp9nRlkRCI",
-
-    authDomain: "nutrisnap-e6cf9.firebaseapp.com",
-
-    projectId: "nutrisnap-e6cf9",
-
-    storageBucket: "nutrisnap-e6cf9.appspot.com",
-
-    messagingSenderId: "169090435206",
-
-    appId: "1:169090435206:web:45f0d96b834969ca236907",
-
-    measurementId: "G-VHL1DB60YR",
+    apiKey: "AIzaSyCh3FXH9ggmwQwOvGwV7hgfONNG0_W0AyQ",
+    authDomain: "deepfazer-193f2.firebaseapp.com",
+    databaseURL: "https://deepfazer-193f2-default-rtdb.firebaseio.com",
+    projectId: "deepfazer-193f2",
+    storageBucket: "deepfazer-193f2.appspot.com",
+    messagingSenderId: "496079065415",
+    appId: "1:496079065415:web:b582ecc1bc183b29d1bc62",
+    measurementId: "G-RJNJ5ZL1PW"
   };
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
@@ -178,7 +173,7 @@ const UserRankingPage = () => {
           </p>
         ) : null}
         <div className="p-8 m-6 max-sm:m-1 max-sm:p-4">
-          <h2 className="mt-2 foodsnap text-xl text-gray-700">
+          <h2 className="mt-2 deepscan text-xl text-gray-700">
             Overall Ranking
           </h2>
           <div className="border shadow-sm rounded-md p-4 bg-white mt-2">
@@ -223,7 +218,7 @@ const UserRankingPage = () => {
       <div className="bottom-navigation bottom-0 fixed w-full p-4 md:hidden bg-gradient-to-b from-white to-transparent backdrop-blur-md shadow-2xl h-fit">
         <div className="flex items-center justify-around md:hidden">
           <div className="flex flex-col items-center">
-            <a href="/foodsnap">
+            <a href="/deepscan">
               <img
                 src="/food.png"
                 alt=""

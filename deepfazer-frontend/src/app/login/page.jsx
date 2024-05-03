@@ -7,19 +7,14 @@ import { getFirestore, doc, setDoc } from "firebase/firestore";
 import { useRouter } from "next/navigation";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAbn4iCEy5W9rSO-UiOmd_8Vbp9nRlkRCI",
-
-  authDomain: "nutrisnap-e6cf9.firebaseapp.com",
-
-  projectId: "nutrisnap-e6cf9",
-
-  storageBucket: "nutrisnap-e6cf9.appspot.com",
-
-  messagingSenderId: "169090435206",
-
-  appId: "1:169090435206:web:45f0d96b834969ca236907",
-
-  measurementId: "G-VHL1DB60YR",
+  apiKey: "AIzaSyCh3FXH9ggmwQwOvGwV7hgfONNG0_W0AyQ",
+  authDomain: "deepfazer-193f2.firebaseapp.com",
+  databaseURL: "https://deepfazer-193f2-default-rtdb.firebaseio.com",
+  projectId: "deepfazer-193f2",
+  storageBucket: "deepfazer-193f2.appspot.com",
+  messagingSenderId: "496079065415",
+  appId: "1:496079065415:web:b582ecc1bc183b29d1bc62",
+  measurementId: "G-RJNJ5ZL1PW"
 };
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
@@ -36,7 +31,7 @@ const LoginWithGoogle = () => {
         setUser(authUser);
         // Store user data in Firestore
 
-        router.push("/foodsnap");
+        router.push("/deepscan");
       } else {
         setUser(null);
       }
@@ -123,7 +118,7 @@ const LoginWithGoogle = () => {
             <span className="text-gray-600 font-normal text-xl">
               to Unlock Best Features of{" "}
             </span>
-            Nutrisnap
+            DeepFazer
           </div>
           {/* {loading ? <Spinner /> : ""} */}
 

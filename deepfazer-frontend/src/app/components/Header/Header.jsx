@@ -8,19 +8,14 @@ import { getAuth, signOut, onAuthStateChanged } from "firebase/auth";
 import { useRouter } from "next/navigation";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAbn4iCEy5W9rSO-UiOmd_8Vbp9nRlkRCI",
-
-  authDomain: "nutrisnap-e6cf9.firebaseapp.com",
-
-  projectId: "nutrisnap-e6cf9",
-
-  storageBucket: "nutrisnap-e6cf9.appspot.com",
-
-  messagingSenderId: "169090435206",
-
-  appId: "1:169090435206:web:45f0d96b834969ca236907",
-
-  measurementId: "G-VHL1DB60YR",
+  apiKey: "AIzaSyCh3FXH9ggmwQwOvGwV7hgfONNG0_W0AyQ",
+  authDomain: "deepfazer-193f2.firebaseapp.com",
+  databaseURL: "https://deepfazer-193f2-default-rtdb.firebaseio.com",
+  projectId: "deepfazer-193f2",
+  storageBucket: "deepfazer-193f2.appspot.com",
+  messagingSenderId: "496079065415",
+  appId: "1:496079065415:web:b582ecc1bc183b29d1bc62",
+  measurementId: "G-RJNJ5ZL1PW"
 };
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
@@ -128,7 +123,7 @@ const Header = () => {
             <>
               <li>
                 <a
-                  href="/foodsnap"
+                  href="/deepscan"
                   className="max-md:hidden rounded-full px-2 py-2 -ml-4 text-black hover:bg-gray-300 transition duration-300 ease-in-out"
                 >
                   Food

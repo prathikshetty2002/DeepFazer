@@ -24,19 +24,14 @@ import { useRouter } from "next/navigation";
 import { gsap } from "gsap";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAbn4iCEy5W9rSO-UiOmd_8Vbp9nRlkRCI",
-
-  authDomain: "nutrisnap-e6cf9.firebaseapp.com",
-
-  projectId: "nutrisnap-e6cf9",
-
-  storageBucket: "nutrisnap-e6cf9.appspot.com",
-
-  messagingSenderId: "169090435206",
-
-  appId: "1:169090435206:web:45f0d96b834969ca236907",
-
-  measurementId: "G-VHL1DB60YR",
+  apiKey: "AIzaSyCh3FXH9ggmwQwOvGwV7hgfONNG0_W0AyQ",
+  authDomain: "deepfazer-193f2.firebaseapp.com",
+  databaseURL: "https://deepfazer-193f2-default-rtdb.firebaseio.com",
+  projectId: "deepfazer-193f2",
+  storageBucket: "deepfazer-193f2.appspot.com",
+  messagingSenderId: "496079065415",
+  appId: "1:496079065415:web:b582ecc1bc183b29d1bc62",
+  measurementId: "G-RJNJ5ZL1PW"
 };
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
@@ -209,7 +204,7 @@ const ImageUploader = () => {
     try {
       if (user) {
         await updateDoc(doc(db, "users", user.uid), {
-          foodsnapUrls: arrayUnion(imageUrl),
+          deepscanUrls: arrayUnion(imageUrl),
         });
         console.log("Image URL successfully updated in Firestore!");
       } else {
@@ -257,7 +252,7 @@ const ImageUploader = () => {
       const parts = [
         await fileToGenerativePart(file),
         {
-          text: "Analyse the food and give output in this manner in a json format eg {status:'unhealthy',description:'the food contains paneer and gravy'. est calories:'400-500 cal', XP:'the value ranges from 1-10 depending on the food health', diet: 'suggest a good diet for the person to stay fit and healthy'} pls do not halucinate and give unique recommendations and output for new food images",
+          text: "Analyse the image and give output if it can be a deepfake or not in this manner in a json format eg {status:'possible/highly possible/least possible',description:'the image description'. sentiment:'Positive', XP:'the value ranges from 1-10 depending on the deepfake', action: 'suggest an action to counter such deepfakes'} pls do not halucinate and give unique suggestions and output for new  images",
         },
       ];
 
@@ -335,10 +330,10 @@ const ImageUploader = () => {
 
       <div className="px-4">
         <div className=" mx-auto text-center text-7xl max-sm:text-4xl max-md:text-6xl font-bold mt-10">
-          Ready to send us your <span className="text-grad">"Foodsnap"</span> ?
+          Ready to send us your <span className="text-grad">"deepscan"</span> ?
         </div>
         <p className="text-sm max-sm:text-xs text-gray-600 mt-4 mx-auto text-center">
-          Choose a file or open camera to send us pics to analyze the food and
+          Choose a file or open camera to send us pics to analyze the content and
           provide you the necesary data
         </p>
         <div className="flex max-md:flex-col mx-auto justify-center mt-8 px-24 max-sm:px-4">
@@ -386,7 +381,7 @@ const ImageUploader = () => {
                   className="Download Remedies mb-8 cursor-pointer mx-auto px-4 py-2 text-black border rounded-full w-fit border-black"
                   onClick={divShot}
                 >
-                  Download Remedies
+                  Download Report
                 </div>
               </>
             )}
@@ -428,13 +423,13 @@ const ImageUploader = () => {
                   </div>
                   <div
                     className={`text-md w-fit max-md:w-full font-semibold px-4 py-3 ${
-                      result.status === "unhealthy"
+                      result.status === "possible"
                         ? "bg-red-100 rounded-md text-red-900 border-l-4 border-red-900"
                         : "bg-green-100 rounded-md text-green-900 border-l-4 border-green-900"
                     }  shadow-sm hover:shadow-lg transition-all mt-2 mb-4`}
                   >
                     Status:{" "}
-                    {result.status === "unhealthy" ? "Unhealthy" : "Healthy"}
+                    {result.status === "possible" ? "highly possible" : "least possible"}
                   </div>
                   <p className="text-md max-sm:text-sm text-gray-600 leading-relaxed px-4 py-3 bg-gray-100 rounded-md border-l-4 border-gray-500">
                     <span className="font-bold text-lg max-sm:text-md">
@@ -444,15 +439,15 @@ const ImageUploader = () => {
                   </p>
                   <p className="text-md max-sm:text-sm mt-4 text-gray-600 leading-relaxed px-4 py-3 bg-gray-100 rounded-md border-l-4 border-gray-500">
                     <span className="font-bold text-lg max-sm:text-md">
-                      Calories:
+                      Sentiment:
                     </span>{" "}
-                    {result.est_calories}
+                    {result.sentiment}
                   </p>
                   <p className="text-md max-sm:text-sm mt-4 text-gray-600 leading-relaxed px-4 py-3 bg-gray-100 rounded-md border-l-4 border-gray-500">
                     <span className="font-bold text-lg max-sm:text-md">
-                      Diet for you:
+                     Suggestions to tackle this:
                     </span>{" "}
-                    {result.diet}
+                    {result.action}
                   </p>
                 </div>
               </div>
@@ -463,7 +458,7 @@ const ImageUploader = () => {
       <div className="bottom-navigation bottom-0 fixed w-full p-4 md:hidden bg-gradient-to-b from-white to-transparent backdrop-blur-md shadow-2xl h-fit">
         <div className="flex items-center justify-around md:hidden">
           <div className="flex flex-col items-center">
-            <a href="/foodsnap">
+            <a href="/deepscan">
               <img
                 src="/food.png"
                 alt=""
