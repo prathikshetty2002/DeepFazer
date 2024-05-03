@@ -91,7 +91,7 @@ const Header = () => {
               />
             )}
             <h1 className="md:block font-bold text-xl max-md:text-sm">
-              {user ? `Welcome, ${user.displayName}` : "Nutrisnap"}
+              {user ? `Welcome, ${user.displayName}` : "deepfazer"}
             </h1>
           </a>
 

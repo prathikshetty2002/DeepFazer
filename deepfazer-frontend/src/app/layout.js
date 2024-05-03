@@ -6,13 +6,13 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 const inter = DM_Sans({ subsets: ["latin"] });
 export const metadata = {
-  title: "Nutrisnap",
+  title: "deepfazer",
   description:
     "Think of Fitness Think of Us Creation By Prathik Shetty, Rahul Singh , Rishabh Pandey",
   image: "/logo.png",
-  url: "https://nutrisnap.vercel.app/",
+  url: "https://deepfazer.vercel.app/",
   type: "website",
-  siteName: "Nutrisnap",
+  siteName: "deepfazer",
 };
 
 export default function RootLayout({ children }) {

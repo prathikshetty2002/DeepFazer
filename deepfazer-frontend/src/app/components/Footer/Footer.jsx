@@ -75,14 +75,14 @@ const Footer = () => {
                   src="/logo.png"
                   height={50}
                   width={50}
-                  alt="nutrisnap"
+                  alt="deepfazer"
                   className="px-2 f"
                 />
-                Nutrisnap
+                deepfazer
               </h6>
               <p>
-                Welcome to NutriSnap, your go-to destination for personalized
-                nutrition and wellness solutions. At NutriSnap, we believe in
+                Welcome to deepfazer, your go-to destination for personalized
+                nutrition and wellness solutions. At deepfazer, we believe in
                 the transformative power of healthy living and the impact it can
                 have on your overall well-being.
               </p>

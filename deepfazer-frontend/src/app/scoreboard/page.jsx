@@ -126,7 +126,7 @@ const UserRankingPage = () => {
           User Ranking
         </h1>
         <p className="text-center max-sm:text-sm text-md my-2">
-          Find out where you stand in the NutriSnap community.
+          Find out where you stand in the deepfazer community.
         </p>
         <div className=" flex-col items-center justify-center">
           <div className="flex items-center mx-auto justify-center">
