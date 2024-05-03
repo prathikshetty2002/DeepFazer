@@ -146,7 +146,7 @@ const Footer = () => {
                     alt=""
                     className="w-8 mr-2 rounded-full "
                   />
-                 Utsavraj Singh
+                 Harsh Verma
                 </p>{" "}
               </a>
               <a target="_blank" href="https://rizzabh.xyz">
@@ -156,7 +156,7 @@ const Footer = () => {
                     alt=""
                     className="w-8 mr-2 rounded-full"
                   />
-                  Rishabh Pandey
+                  Ashutosh Pandey
                 </p>
               </a>
             </div>
@@ -164,13 +164,13 @@ const Footer = () => {
         </div>
 
         <div className="bg-opacity-30  p-6 text-center text-black">
-          <span>© 2023 Copyright:</span>
+          <span>© 2024 Copyright:</span>
           <a
             className="font-semibold text-black"
-            href="https://github.com/prathikshetty2002/NutriSnap"
+            href="https://github.com/prathikshetty2002/DeepFazer"
           >
             {" "}
-            BrockBand
+            DeepFazer
           </a>
         </div>
       </footer>
