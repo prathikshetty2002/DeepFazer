@@ -8,9 +8,9 @@ const inter = DM_Sans({ subsets: ["latin"] });
 export const metadata = {
   title: "deepfazer",
   description:
-    "Think of Fitness Think of Us Creation By Prathik Shetty, Rahul Singh , Rishabh Pandey",
+    "Think of Fitness Think of Us Creation By Prathik Shetty, Harsh Verma , Ashutosh Pandey",
   image: "/logo.png",
-  url: "https://deepfazer.vercel.app/",
+  url: "https://deep-fazer.vercel.app/",
   type: "website",
   siteName: "deepfazer",
 };
