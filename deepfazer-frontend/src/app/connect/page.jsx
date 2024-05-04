@@ -70,14 +70,14 @@ export default function NutritionistsPage() {
     <Analytics />
       <div className="blueball blur-3xl bg-cyan-400/50 w-96 h-96 fixed top-0 left-0 rounded-full"></div>
       <div className="container mx-auto px-4 py-8 z-1">
-        <h1 className="text-7xl max-sm:text-5xl nutricon font-bold mx-auto text-center">
-          Nutricon
+        <h1 className="text-7xl max-sm:text-5xl connect font-bold mx-auto text-center">
+          connect
         </h1>
         <p className="mx-auto text-center mb-8">
-          Connect with Nutritionists and Dermats globally.
+          Connect with Cyber experts globally.
         </p>
         <h1 className="text-5xl max-sm:text-3xl font-bold mb-6 text">
-          Nutritionists
+          Deepfake Report 
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {nutritionistsData.nutritionists.map((nutritionist) => (
@@ -106,7 +106,7 @@ export default function NutritionistsPage() {
             </div>
           ))}
         </div>
-        <h1 className="text-5xl max-sm:text-3xl mt-10 font-bold mb-6">
+        {/* <h1 className="text-5xl max-sm:text-3xl mt-10 font-bold mb-6">
           Skin Experts
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -135,7 +135,7 @@ export default function NutritionistsPage() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
         {selectedNutritionist && (
           <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
             <div className="bg-white p-8 rounded-lg shadow-md">
@@ -169,7 +169,7 @@ export default function NutritionistsPage() {
             </a>
           </div>
           <div className="flex flex-col items-center">
-            <a href="/nutricon">
+            <a href="/connect">
               <img
                 src="/connect.png"
                 alt=""

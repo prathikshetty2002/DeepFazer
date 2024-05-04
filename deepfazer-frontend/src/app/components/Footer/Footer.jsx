@@ -72,7 +72,7 @@ const Footer = () => {
             <div>
               <h6 className="mb-4 flex items-center justify-center uppercase md:justify-start font-bold">
                 <img
-                  src="/logonew.png"
+                  src="/logo.png"
                   height={50}
                   width={50}
                   alt="deepfazer"
@@ -102,23 +102,8 @@ const Footer = () => {
                 </a>
               </p>
               <p className="mb-4">
-                <a href="/bodysnap" className=" text-black">
-                  Bodysnap
-                </a>
-              </p>
-              <p className="mb-4">
-                <a href="/skinsnap" className=" text-black">
-                  Skinsnap
-                </a>
-              </p>
-              <p className="mb-4">
-                <a href="/wearos" className=" text-black">
-                  WearOS
-                </a>
-              </p>
-              <p className="mb-4">
-                <a href="/nutricon" className=" text-black">
-                  Nutricon
+                <a href="/connect" className=" text-black">
+                  Connect
                 </a>
               </p>
               <p className="mb-4">
@@ -126,6 +111,21 @@ const Footer = () => {
                   Pricings
                 </a>
               </p>
+              {/* <p className="mb-4">
+                <a href="/wearos" className=" text-black">
+                  WearOS
+                </a>
+              </p> */}
+              <p className="mb-4">
+                <a href="/scoreboard" className=" text-black">
+                  Leaderboard
+                </a>
+              </p>
+              {/* <p className="mb-4">
+                <a href="/pricings" className=" text-black">
+                  Pricings
+                </a>
+              </p> */}
             </div>
             <div>
               <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">

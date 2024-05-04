@@ -74,7 +74,7 @@ background-clip: text;
 -webkit-text-fill-color: transparent;
 }
 
-.nutricon{
+.connect{
    /* text gradient from webkit */
    background: linear-gradient(269deg, #00575C 29.96%, #00cfda 93.86%);
    background-clip: text;

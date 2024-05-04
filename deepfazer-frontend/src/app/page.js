@@ -54,7 +54,7 @@ export default function Home() {
           <div className="flex flex-col items-center">
             <a href="/scoreboard">
               <img
-                src="/nutricon.png"
+                src="/connect.png"
                 alt=""
                 height={30}
                 width={30}

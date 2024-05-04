@@ -52,7 +52,7 @@ const Header = () => {
     });
     return () => unsubscribe();
   }, []);
-  const handlelogonewut = () => {
+  const handlelogout = () => {
     signOut(auth)
       .then(() => {
         sessionStorage.removeItem("user");
@@ -83,7 +83,7 @@ const Header = () => {
               />
             ) : (
               <img
-                src="/logonew.png"
+                src="/logo.png"
                 alt=""
                 height={30}
                 width={30}
@@ -102,7 +102,7 @@ const Header = () => {
           )}
 
           {user ? (
-            <button onClick={handlelogonewut}>
+            <button onClick={handlelogout}>
               <img src="/exit.png" height={30} width={30} alt="" />
             </button>
           ) : (
@@ -131,7 +131,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="/nutricon"
+                  href="/connect"
                   className="max-md:hidden rounded-full px-2 py-2 -ml-4 text-black hover:bg-gray-300 transition duration-300 ease-in-out"
                 >
                   Connect
@@ -155,10 +155,10 @@ const Header = () => {
               </li> */}
               {/* <li>
                 <a
-                  href="/nutricon"
+                  href="/connect"
                   className="max-md:hidden rounded-full px-2 py-2 -ml-4 text-black hover:bg-gray-300 transition duration-300 ease-in-out"
                 >
-                  NutriCon
+                  connect
                 </a>
               </li> */}
               <li>

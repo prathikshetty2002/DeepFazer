@@ -470,7 +470,7 @@ const ImageUploader = () => {
             </a>
           </div>
           <div className="flex flex-col items-center">
-            <a href="/nutricon">
+            <a href="/connect">
               <img
                 src="/connect.png"
                 alt=""
