@@ -484,7 +484,7 @@ const ImageUploader = () => {
           <div className="flex flex-col items-center">
             <a href="/pricings">
               <img
-                src="/pricing.png"
+                src="/pricings.png"
                 alt=""
                 height={30}
                 width={30}

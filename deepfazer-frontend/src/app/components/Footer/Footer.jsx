@@ -82,9 +82,8 @@ const Footer = () => {
               </h6>
               <p>
                 Welcome to deepfazer, your go-to destination for personalized
-                nutrition and wellness solutions. At deepfazer, we believe in
-                the transformative power of healthy living and the impact it can
-                have on your overall well-being.
+                deepfake report and solutions. At deepfazer, we believe in
+                the transformative power of social analysis using GANs.
               </p>
             </div>
             <div className="px-10">
@@ -142,7 +141,7 @@ const Footer = () => {
               <a target="_blank" href="https://rahulol.me">
                 <p className="mb-4 flex items-center justify-center md:justify-start">
                   <img
-                    src="/rahul.jpeg"
+                    src="/harsh.jpeg"
                     alt=""
                     className="w-8 mr-2 rounded-full "
                   />
